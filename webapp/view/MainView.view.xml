@@ -4,7 +4,7 @@
     <Page id="page" title="{i18n>title}">
         <content>
             <Panel headerText="Selection screen" id = "MainPanel">
-                <Label id = "1"></Label>
+                <Label id = "labelShipName" text="Ship name" class="sapUISmallMargin"/>
             
             </Panel>
         </content>
