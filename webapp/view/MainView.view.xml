@@ -3,7 +3,10 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content>
-            <Text id="Texto1" text="Hola Mundo!"></Text>
+            <Panel headerText="Selection screen" id = "MainPanel">
+                <Label id = "1"></Label>
+            
+            </Panel>
         </content>
     </Page>
 </mvc:View>
