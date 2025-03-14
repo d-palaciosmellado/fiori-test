@@ -3,16 +3,24 @@
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form">
     <Page id="page" title="{i18n>appTitle}">
-        <f:SimpleForm id="MainForm" editable="true" layout="ResponsiveGridLayout"> 
-            <f:content>
-                <Panel headerText="{i18n>selectionScreen}" id = "MainPanel">
-                    <Label id = "lbOwner" text="{i18n>owner}" class="sapUISmallMargin" labelFor="owner"/>
-                    <Input id = "owner" width="200px" class="sapUISmallMarginEnd"/>
-                
-                    <Label id = "lbDescr"  text="{i18n>description}" class="sapUISmallMargin" labelFor="description"/>
-                    <Input id = "description" width="200px" class="sapUISmallMarginEnd"/>
-                </Panel>
-            </f:content>
-        </f:SimpleForm>
+        <VBox class="sapUiSmallMargin" justifyContent="Start" backgroundDesign="Transparent" width="50%">
+            <f:SimpleForm id="MainForm" editable="true" layout="ResponsiveGridLayout" columnsXL="1" columnsL="1"> 
+                <f:content>
+                    <Panel headerText="{i18n>selectionScreen}" id = "MainPanel">
+                        <Label id = "lbOwner" text="{i18n>owner}" class="sapUISmallMargin" labelFor="owner"/>
+                        <Input id = "owner" class="sapUiSmallMarginBottom"/>
+                    
+                        <Label id = "lbDescr"  text="{i18n>description}" class="sapUISmallMargin" required="true" labelFor="description"/>
+                        <Input id = "description" class="sapUiSmallMarginBottom"/>
+
+                        <Label id = "lbArea" text="{i18n>area}" required="true" labelFor="area"/>
+                        <Input id = "Area" class="sapUiSmallMarginBottom"/>
+
+                        <Label id = "lbArea" text="{i18n>area}" required="true" labelFor="area"/>
+                        <Input id = "Area" class="sapUiSmallMarginBottom"/>                        
+                    </Panel>
+                </f:content>
+            </f:SimpleForm>
+        </VBox>
     </Page>
 </mvc:View>

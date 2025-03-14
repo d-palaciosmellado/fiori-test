@@ -1,0 +1,21 @@
+{
+    "BU": [
+        {
+            "BuCode": "AR",
+            "BuDesc": "Argentina"
+        },
+        {
+            "BuCode": "ES",
+            "BuDesc": "Spain"
+        },     
+        {
+            "BuCode": "PT",
+            "BuDesc": "Portugal"
+        },                   
+
+        {
+            "BuCode": "UK",
+            "BuDesc": "United Kingdom"
+        },                   
+    ]
+}
