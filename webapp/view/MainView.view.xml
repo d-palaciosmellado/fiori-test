@@ -1,14 +1,18 @@
 <mvc:View controllerName="dpm.invoices.controller.MainView"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content>
-            <Panel headerText="{i18n>selectionScreen}" id = "MainPanel">
-                <Label id = "labelShipName" text="{i18n>shipName}" class="sapUISmallMargin" labelFor="shipName"/>
-                <Input id = "shipName" width="200px" class="sapUISmallMarginEnd"/>
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>appTitle}">
+        <f:SimpleForm id="MainForm" editable="true" layout="ResponsiveGridLayout"> 
+            <f:content>
+                <Panel headerText="{i18n>selectionScreen}" id = "MainPanel">
+                    <Label id = "lbOwner" text="{i18n>owner}" class="sapUISmallMargin" labelFor="owner"/>
+                    <Input id = "owner" width="200px" class="sapUISmallMarginEnd"/>
                 
-                <Label id = "labelCountry"  text="{i18n>country}" class="sapUISmallMargin"/>
-            </Panel>
-        </content>
+                    <Label id = "lbDescr"  text="{i18n>description}" class="sapUISmallMargin" labelFor="description"/>
+                    <Input id = "description" width="200px" class="sapUISmallMarginEnd"/>
+                </Panel>
+            </f:content>
+        </f:SimpleForm>
     </Page>
 </mvc:View>
