@@ -3,7 +3,7 @@
     xmlns="sap.m"
     xmlns:f="sap.ui.layout.form">
     <Page id="page" title="{i18n>appTitle}">
-        <VBox class="sapUiSmallMargin" justifyContent="Start" backgroundDesign="Transparent" width="50%">
+        <VBox id = "MainBox" class="sapUiSmallMargin" justifyContent="Start" backgroundDesign="Transparent" width="50%">
             <f:SimpleForm id="MainForm" editable="true" layout="ResponsiveGridLayout" columnsXL="1" columnsL="1"> 
                 <f:content>
                     <Panel headerText="{i18n>selectionScreen}" id = "MainPanel">
@@ -16,8 +16,8 @@
                         <Label id = "lbArea" text="{i18n>area}" required="true" labelFor="area"/>
                         <Input id = "Area" class="sapUiSmallMarginBottom"/>
 
-                        <Label id = "lbArea" text="{i18n>area}" required="true" labelFor="area"/>
-                        <Input id = "Area" class="sapUiSmallMarginBottom"/>                        
+                        <Label id = "lbBU" text="{i18n>BU}" required="true" />
+                        
                     </Panel>
                 </f:content>
             </f:SimpleForm>
