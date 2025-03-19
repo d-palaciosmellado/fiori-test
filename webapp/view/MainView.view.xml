@@ -1,6 +1,7 @@
 <mvc:View controllerName="dpm.invoices.controller.MainView"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
+    xmlns:core="sap.ui.core"
     xmlns:f="sap.ui.layout.form">
     <Page id="page" title="{i18n>appTitle}">
         <VBox id = "MainBox" class="sapUiSmallMargin" justifyContent="Start" backgroundDesign="Transparent" width="50%">
@@ -17,7 +18,10 @@
                         <Input id = "Area" class="sapUiSmallMarginBottom"/>
 
                         <Label id = "lbBU" text="{i18n>BU}" required="true" />
-                        
+                        <Select id = "DropBU"  items="{ path: '/BU'}" >
+                            <core:Item key="{BuCode}" text="{BuCode} - {BuDesc}"></core:Item>
+                        </Select>                 
+	
                     </Panel>
                 </f:content>
             </f:SimpleForm>
